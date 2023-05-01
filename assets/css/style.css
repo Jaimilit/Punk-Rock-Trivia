@@ -1,0 +1,23 @@
+body {
+    background-color: lightgray;
+    font-family: "monsterrat", sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.game-area {
+    box-sizing: border-box;
+    width: 85%;
+    height: 80vh;
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.question-area {
+    width: 50%;
+    font-size: 2rem;
+    margin: auto;
+    padding: 50px 0;
+}
