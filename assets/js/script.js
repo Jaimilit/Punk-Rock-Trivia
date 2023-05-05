@@ -49,33 +49,68 @@ let questions = [
   }
     ];  
   
+    let startButton = document.getElementById("start-button");
+    let nextButton = document.getElementById("next");
+    let buttons = document.getElementsByTagName("button");
+    let scoreArea = document.getElementById("score-area");
 
-    function displayQuestion() {
-        let currentQuestion = triviaData[currentQuestionIndex]; 
-        let questionElement = document.getElementById("question"); 
-        questionElement.innerText = currentQuestion.question; 
-        let choicesElement = document.getElementById("choices"); 
-        choicesElement.innerHTML = ""; 
-        currentQuestion.choices.forEach(choice => { let button = document.createElement("button"); button.innerText = choice; 
-        button.onclick = () => checkAnswer(choice, currentQuestion.answer); choicesElement.appendChild(button); }); }
 
-        
+    document.addEventListener("DOMContentLoaded", function() 
+        startButton.addEventListener('click', startQuiz);
 
-    function checkAnswer(selectedAnswer, correctAnswer) {
-        if (selectedAnswer === correctAnswer) {
-          score++;
-          alert("Yay! You Are Correct!");
-        } else {
-          alert("Sorry, You Got That Answer Incorrect!");
-        }
-        currentQuestionIndex++;
-        if (currentQuestionIndex === questions.length) {
-          endGame();
-        } else {
-          displayQuestion();
-        }
-      }
- 
- 
- 
-      showQuestion(questions[0]);
+        document.getElementById("answer-box").addEventListener("keydown", function(event){
+            if (event.key === "Enter") {
+                checkAnswer();
+            }
+
+            function startQuiz() {
+                startButton.style.display = 'none';
+                              score = 0;
+                currentQuestion = 0;
+                              displayQuestion();
+              }
+
+            function displayQuestion() {
+                let randomIndex = Math.floor(Math.random() * questions.length);
+                let question = question[randomIndex].question;
+                let answers = question[randomIndex].answers;
+
+                document.getElementById("question").innerHTML = question;
+                for (let i = 0; i < answers.length; i++) {
+                  document.getElementById("answer" + i).innerHTML = answers[i];
+                }
+              }
+
+              function checkAnswer() {
+                // Get the selected answer
+                let selectedAnswer = null;
+                for (let i = 0; i < buttons.length; i++) {
+                  if (buttons[i].classList.contains('selected')) {
+                    selectedAnswer = i;
+                    break;
+                  }
+                }
+              
+              
+                if (selectedAnswer === questions[currentQuestion].correctAnswer) {
+                  score++;
+                  scoreArea.textContent = 'Yay! You Are Correct!';
+                } else {
+                  scoreArea.textContent = 'Sorry, You Go That Answer Incorrect!';
+                }
+              
+                currentQuestion++;
+                if (currentQuestion >= questions.length) {
+                  endQuiz();
+                } else {
+                  displayQuestion();
+                }
+              }
+
+              function endQuiz() {
+                scoreArea.textContent = `You scored ${score} out of ${questions.length}`;
+              
+                nextButton.textContent = 'Restart';
+                nextButton.onclick = startQuiz;
+              }
+            
