@@ -1,23 +1,56 @@
+
+
 body {
+    padding:0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
     background-color: lightgray;
     font-family: "monsterrat", sans-serif;
     color: black;
     text-align: center;
 }
 
-.game-area {
-    box-sizing: border-box;
-    width: 85%;
-    height: 80vh;
-    max-height: 450px;
-    max-width: 830px;
-    margin-left: auto;
-    margin-right: auto;
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-.question-area {
-    width: 50%;
-    font-size: 2rem;
-    margin: auto;
-    padding: 50px 0;
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 20px 0;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.btn:hover {
+    border-color: white;
+}
+
+.btn-correct {
+background-color: green;
+}
+
+.btn-wrong {
+background-color: red;
+color: white;
 }
