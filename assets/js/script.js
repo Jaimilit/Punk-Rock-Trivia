@@ -34,7 +34,7 @@ let questions = [
   },
   {
     question: "This supergroup features members from Leftover Crack, Ensign, & The Ergs.",
-    choices: ["Star Fucking Hipsters", "Me First and the Gimme Gimmes", "The Unseen" "The Transplants"]
+    choices: ["Star Fucking Hipsters", "Me First and the Gimme Gimmes", "The Unseen", "The Transplants"]
     correctAnswer: 0
   },
   {
@@ -44,7 +44,7 @@ let questions = [
   }
   {
     question: "The singer from this band has a book titled 'Tranny: Confessions of Punk Rock's Most Infamous Anarchist Sellout'",
-    choices: ["Rancid", "Bad Religion", "Against Me!" "Choking Victum"]
+    choices: ["Rancid", "Bad Religion", "Against Me!", "Choking Victum"]
     correctAnswer: 2
   }
     ];  
