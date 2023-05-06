@@ -94,7 +94,7 @@ let questions = [
     ];  
   
 
-let startButton = document.getElementById('start-btn')
+const startButton = document.getElementById('start-btn btn')
 let questionContainerElement = document.getElementById('question-container')
 let shuffledQuestions, currentQuestionIndex
 let questionElement = document.getElementById('question')
@@ -113,7 +113,7 @@ questionContainerElement.classList.remove('hide')
 SetNextQuestion()
 }
 
-function nextQuestion() {
+function setNextQuestion() {
 showQuestion (shuffledQuestions[currentQuestionIndex])
 }
 
