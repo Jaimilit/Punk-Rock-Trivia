@@ -69,4 +69,30 @@ color: white;
 
 .hide {
     display: none;
-}
+ 
+ 
+ }
+ 
+
+footer {
+    height: 150px;
+ }
+ 
+ 
+ .social-networks {
+  text-align: center;
+ }
+ 
+ 
+ .social-networks > li {
+  display: inline;
+ }
+ 
+ 
+ .social-networks i {
+  font-size: 160%;
+  margin: 1%;
+  padding: 7%;
+  color: #343a40;
+ }
+ 
