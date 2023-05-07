@@ -46,11 +46,11 @@ body {
     border-color: white;
 }
 
-.btn-correct {
+.btn.correct {
 background-color: green;
 }
 
-.btn-wrong {
+.btn.wrong {
 background-color: red;
 color: white;
 }

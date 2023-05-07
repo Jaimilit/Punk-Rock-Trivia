@@ -1,3 +1,5 @@
+
+
 const questions = [
     {
         question: 'Jello Biaffara was frontman for which punk band?',
@@ -171,6 +173,35 @@ const questions = [
       element.classList.remove('wrong');
     }
    
+    function checkAnswer() {
+
+        let userAnswer = parseInt(document.getElementById("score").value);
+        let calculatedAnswer = calculateCorrectAnswer();
+        let isCorrect = userAnswer === calculatedAnswer[0];
+        
+        if (isCorrect) {
+            incrementScore();
+        } else {
+            incrementWrongAnswer();
+        }
+                
+        }
+
+        function incrementScore(){
+    
+            let oldScore = parseInt(document.getElementById("score").innerText);
+            document.getElementById("score").innerText = ++oldScore;
+            
+            }
+            
+            function incrementWrongAnswer() {
+            
+                let oldScore = parseInt(document.getElementById("incorrect").innerText);
+            document.getElementById("incorrect").innerText = ++oldScore;
+            }
+    
+    
+    
     
 
     
