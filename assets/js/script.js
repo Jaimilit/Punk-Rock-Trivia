@@ -1,8 +1,8 @@
 
-
+// game questions
 const questions = [
     {
-        question: 'Jello Biaffara was frontman for which punk band?',
+        question: 'Jello Biafra was frontman for which punk band?',
         answers: [
             { text: 'The Clash', correct: false },
             { text: 'The Dead Kennedys', correct: true },
@@ -94,6 +94,7 @@ const questions = [
   },
     ];  
   
+    // define variables in order to drive quiz
    const startButton = document.getElementById('start-btn');
    const nextButton = document.getElementById('next-btn');
    const questionContainerElement = document.getElementById('question-container');
@@ -102,13 +103,17 @@ const questions = [
   
    let shuffledQuestions;
    let currentQuestionIndex;
-  
+   let score = 0;
+
+
+  // event listeners
    startButton.addEventListener('click', startGame);
    nextButton.addEventListener('click', () => {
      currentQuestionIndex++;
      setNextQuestion();
    });
   
+   // function to start game 
    function startGame () {
        startButton.classList.add('hide');
        shuffledQuestions = questions.sort(() => Math.random() - .5);
@@ -117,11 +122,22 @@ const questions = [
        setNextQuestion();
    }
   
-   function setNextQuestion() {
-     resetState();
-     showQuestion(shuffledQuestions[currentQuestionIndex]);
-   }
+   // function to go to the next question and shuffle the order
+    function setNextQuestion() {
+        resetState();
+        if (currentQuestionIndex >= 10) {
+          questionContainerElement.innerHTML = '<h2>Game over!</h2>';
+          startButton.innerText = 'Restart';
+          startButton.classList.remove('hide');
+        } else {
+          showQuestion(shuffledQuestions[currentQuestionIndex]);
+        }
+      }
+     
+
   
+   //function to show next question and add button
+
    function showQuestion(question) {
      questionElement.innerText = question.question;
      question.answers.forEach(answer => {
@@ -135,35 +151,41 @@ const questions = [
        answerButtonsElement.appendChild(button);
      });
    }
+
+   // removes buttons when going to new question
   
    function resetState() {
-     clearStatusClass(document.body);
-     nextButton.classList.add('hide');
-     while (answerButtonsElement.firstChild) {
-       answerButtonsElement.removeChild(answerButtonsElement.firstChild);
-     }
-   }
-  
-   function selectAnswer(e) {
-     const selectedButton = e.target;
-     const correct = selectedButton.dataset.correct;
-     setStatusClass(document.body, correct);
-     Array.from(answerButtonsElement.children).forEach(button => {
-       setStatusClass(button, button.dataset.correct);
-     });
-     if (shuffledQuestions.length > currentQuestionIndex + 1) {
-       nextButton.classList.remove('hide');
+    clearStatusClass(document.body);
+    nextButton.classList.add('hide');
+    while (answerButtonsElement.firstChild) {
+      answerButtonsElement.removeChild(answerButtonsElement.firstChild);
+    }
+  }
+
+
+  // checks if selected answer is correct or incorrect and increments it accordingly 
+  function selectAnswer(e) {
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct;
+    setStatusClass(document.body, correct);
+    Array.from(answerButtonsElement.children).forEach(button => {
+      setStatusClass(button, button.dataset.correct);
+    });
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+      nextButton.classList.remove('hide');
+    } else {
+      startButton.innerText = 'Restart';
+      startButton.classList.remove('hide');
+    }
+    if (correct) {
+       incrementScore();
      } else {
-       startButton.innerText = 'Restart';
-       startButton.classList.remove('hide');
+       incrementWrongAnswer();
      }
-     if (correct) {
-        incrementScore();
-      } else {
-        incrementWrongAnswer();
-      }
-   }
-  
+  }
+
+
+
    function setStatusClass(element, correct) {
      clearStatusClass(element);
      if (correct) {
@@ -192,7 +214,6 @@ const questions = [
               
        }
 
-
        function incrementScore(){
   
            let oldScore = parseInt(document.getElementById("score").innerText);
@@ -206,5 +227,15 @@ const questions = [
            document.getElementById("incorrect").innerText = ++oldScore;
            }
   
-  
+           // end game
+           function endGame() {
+            questionContainerElement.classList.add('hide');
+            nextButton.classList.add('hide');
+            startButton.classList.remove('hide');
+            const finalScore = score * 10;
+            const message = `You scored ${finalScore}%`;
+            questionElement.innerText = message;
+          }
+
+
   
