@@ -116,20 +116,22 @@ const questions = [
       startButton.classList.add('hide');
       shuffledQuestions = questions.sort(() => Math.random() - .5);
       currentQuestionIndex = 0;
+      score = 0;
       questionContainerElement.classList.remove('hide');
       setNextQuestion();
   }
    // function to go to the next question and shuffle the order
+
    function setNextQuestion() {
-       resetState();
-       if (currentQuestionIndex >= 10) {
-         questionContainerElement.innerHTML = '<h2>Game over!</h2>';
-         startButton.innerText = 'Restart';
-         startButton.classList.remove('hide');
-       } else {
-         showQuestion(shuffledQuestions[currentQuestionIndex]);
-       }
-     }
+    resetState();
+    if (currentQuestionIndex >= 10) {
+      endGame();
+    } else {
+      showQuestion(shuffledQuestions[currentQuestionIndex]);
+    }
+  }
+
+  
    
 
    //function to show next question and add button
@@ -166,19 +168,20 @@ const questions = [
    Array.from(answerButtonsElement.children).forEach(button => {
      setStatusClass(button, button.dataset.correct);
    });
-   if (shuffledQuestions.length > currentQuestionIndex + 1) {
-     nextButton.classList.remove('hide');
-   } else {
-     startButton.innerText = 'Restart';
-     startButton.classList.remove('hide');
-   }
-   if (correct) {
-      incrementScore();
-    } else {
-      incrementWrongAnswer();
-    }
- }
 
+  if (correct) {
+    incrementScore();
+  } else {
+    incrementWrongAnswer();
+  }
+  // show the next button if there are more questions
+  if (shuffledQuestions.length > currentQuestionIndex + 1) {
+    nextButton.classList.remove('hide');
+  } else {
+    // end the game if there are no more questions
+    endGame();
+  }
+}
 
 
   function setStatusClass(element, correct) {
@@ -193,37 +196,34 @@ const questions = [
     element.classList.remove('correct');
     element.classList.remove('wrong');
   }
-  function checkAnswer() {
+ 
 
-      let userAnswer = parseInt(document.getElementById("score").value);
-      let calculatedAnswer = calculateCorrectAnswer();
-      let isCorrect = userAnswer === calculatedAnswer[0];
-    
-      if (isCorrect) {
-          incrementScore();
-      } else {
-          incrementWrongAnswer();
-      }
-            
-      }
+  function incrementScore(){
+    let oldScore = parseInt(document.getElementById("score").innerText);
+   document.getElementById("score").innerText = ++oldScore;
 
-      function incrementScore(){
-           let oldScore = parseInt(document.getElementById("score").innerText);
-          document.getElementById("score").innerText = ++oldScore;
-        
+   }
+
+   function incrementWrongAnswer() {
+
+       let oldScore = parseInt(document.getElementById("incorrect").innerText);
+   document.getElementById("incorrect").innerText = ++oldScore;
+   }
+
+        // end game
+        function endGame() {
+            startButton.innerText = 'Restart';
+            startButton.classList.remove('hide');
+            let finalScore = score * 10;
+            const message = `You scored ${finalScore}%`;
+            const scoreElement = document.createElement('p');
+            scoreElement.innerText = message;
+            questionContainerElement.appendChild(scoreElement);
+            const gameOverElement = document.createElement('h2');
+            gameOverElement.innerText = 'Game over!';
+            questionContainerElement.appendChild(gameOverElement);
           }
-        
-          function incrementWrongAnswer() {
-        
-              let oldScore = parseInt(document.getElementById("incorrect").innerText);
-          document.getElementById("incorrect").innerText = ++oldScore;
-          }
-           // end game
-          function endGame() {
-           questionContainerElement.classList.add('hide');
-           nextButton.classList.add('hide');
-           startButton.classList.remove('hide');
-           const finalScore = score * 10;
-           const message = `You scored ${finalScore}%`;
-           questionElement.innerText = message;
-         }
+          
+          
+          
+          
