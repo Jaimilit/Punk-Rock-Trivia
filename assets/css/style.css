@@ -137,6 +137,8 @@ color: white;
    
 
     .container {
+        margin-top: -50px;
+        padding: 0 auto;
     width: 80vw;
     height: 40vh;
     position: relative;
@@ -149,12 +151,13 @@ color: white;
         height: 10vh;
         bottom: 100px;
         font-size: small;
+        position: fixed;
      }
 
   footer {
     margin: 0;
     bottom: 0;
-    position: absolute;
+    position: fixed;
   }
 
 }
