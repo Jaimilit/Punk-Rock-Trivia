@@ -136,22 +136,24 @@ color: white;
         width:20vw:
     }
 
-    .heading > h1 {
-        width: 20vw;
+    h1 {
+        font-size: medium;
     }
 
     .container {
-    width: 80vw;
+    width: 90vw;
     height: 40vh;
     position: flex;
+    font-size: small;
     }
 
      
  .score-area {
-    width: 50vw;
-   height: 20vh;
+    width: 80vw;
+   height: 10vh;
    position: flex;
    bottom: 50px;
+   font-size: small;
   }
 
     footer {
