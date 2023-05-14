@@ -40,7 +40,6 @@ position: absolute;
     background-position: center;
   }
 
-  
 
 .btn-grid {
     display: grid;
@@ -84,25 +83,24 @@ color: white;
  }
  
  .score-area {
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    position: fixed;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 600px;
     max-width: 80%;
     background-color: whitesmoke;
     padding: 20px;
     align-items: center;
-    text-align: center; 
-  }
-
-#scores {
     text-align: center;
-}
+  }
+ 
 
-footer {
+
+  footer {
+    display: fixed;
     height: 150px;
-    color: white;
+    background-color: white;
  }
  
  
@@ -122,4 +120,7 @@ footer {
   padding: 7%;
   color: white;
  }
+ 
+ 
+ 
  

@@ -1,4 +1,3 @@
-
 // game questions
 const questions = [
     {
@@ -27,7 +26,7 @@ const questions = [
             { text: 'NOFX', correct: false },
             { text: 'The Offspring', correct: false },
         ]
-    
+   
     },
     {
         question: 'Sometimes, it\'s the saddest incidents that make for the most amazing of songs. Name the band who turned a suicide tragedy into "Bro Hymn."',
@@ -64,7 +63,7 @@ const questions = [
         { text: 'The Unseen', correct: false },
         { text: 'The Nerve Agents', correct: true },
     ]
-},
+ },
   {
     question: 'This supergroup features members from Leftover Crack, Ensign, & The Ergs.',
     answers: [
@@ -92,9 +91,8 @@ const questions = [
         { text: 'Choking Victum', correct: false },
     ]
   },
-    ];  
-  
-    // define variables in order to drive quiz
+    ]; 
+     // define variables in order to drive quiz
   const startButton = document.getElementById('start-btn');
   const nextButton = document.getElementById('next-btn');
   const questionContainerElement = document.getElementById('question-container');
@@ -103,8 +101,8 @@ const questions = [
    let shuffledQuestions;
   let currentQuestionIndex;
   let score = 0;
-
-
+ 
+ 
  // event listeners
   startButton.addEventListener('click', startGame);
   nextButton.addEventListener('click', () => {
@@ -121,7 +119,7 @@ const questions = [
       setNextQuestion();
   }
    // function to go to the next question and shuffle the order
-
+ 
    function setNextQuestion() {
     resetState();
     if (currentQuestionIndex >= 10) {
@@ -130,12 +128,11 @@ const questions = [
       showQuestion(shuffledQuestions[currentQuestionIndex]);
     }
   }
-
-  
+ 
    
-
+ 
    //function to show next question and add button
-
+ 
   function showQuestion(question) {
     questionElement.innerText = question.question;
     question.answers.forEach(answer => {
@@ -149,7 +146,7 @@ const questions = [
       answerButtonsElement.appendChild(button);
     });
   }
-
+ 
   // removes buttons when going to new question
    function resetState() {
    clearStatusClass(document.body);
@@ -158,8 +155,8 @@ const questions = [
      answerButtonsElement.removeChild(answerButtonsElement.firstChild);
    }
  }
-
-
+ 
+ 
  // checks if selected answer is correct or incorrect and increments it accordingly
  function selectAnswer(e) {
    const selectedButton = e.target;
@@ -168,7 +165,7 @@ const questions = [
    Array.from(answerButtonsElement.children).forEach(button => {
      setStatusClass(button, button.dataset.correct);
    });
-
+ 
   if (correct) {
     incrementScore();
   } else {
@@ -181,9 +178,9 @@ const questions = [
     // end the game if there are no more questions
     endGame();
   }
-}
-
-
+ }
+ 
+ 
   function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
@@ -197,23 +194,20 @@ const questions = [
     element.classList.remove('wrong');
   }
  
-
   function incrementScore(){
     let oldScore = parseInt(document.getElementById("score").innerText);
    document.getElementById("score").innerText = ++oldScore;
-
+ 
    }
-
+ 
    function incrementWrongAnswer() {
-
+ 
        let oldScore = parseInt(document.getElementById("incorrect").innerText);
    document.getElementById("incorrect").innerText = ++oldScore;
    }
-
+ 
         // end game
         function endGame() {
-            startButton.innerText = 'Restart';
-            startButton.classList.remove('hide');
             let finalScore = score * 10;
             const message = `You scored ${finalScore}%`;
             const scoreElement = document.createElement('p');
@@ -222,8 +216,9 @@ const questions = [
             const gameOverElement = document.createElement('h2');
             gameOverElement.innerText = 'Game over!';
             questionContainerElement.appendChild(gameOverElement);
+            const scoreAreaElement = document.querySelector('.score-area');
+            scoreAreaElement.style.display = "none";
           }
-          
-          
-          
-          
+         
+         
+ 
