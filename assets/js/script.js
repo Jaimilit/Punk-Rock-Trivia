@@ -114,20 +114,21 @@ const questions = [
    currentQuestionIndex++;
    setNextQuestion();
  });
+ restartButton.addEventListener('click', restartGame);
 
 
    // function to start game
-  function startGame () {
-      startButton.classList.add('hide');
-      shuffledQuestions = questions.sort(() => Math.random() - .5);
-      currentQuestionIndex = 0;
-      score = 0;
-      questionContainerElement.classList.remove('hide');
-      scoreAreaElement.classList.remove('hide');
-      setNextQuestion();
-      document.querySelector('.score-area').style.display = "block";
+   function startGame () {
+    startButton.classList.add('hide');
+    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    currentQuestionIndex = 0;
+    score = 0;
+    questionContainerElement.classList.remove('hide');
+    scoreAreaElement.classList.remove('hide');
+    setNextQuestion();
+    document.querySelector('.score-area').style.display = "block";
+}
 
-  }
    // function to go to the next question and shuffle the order
  
    function setNextQuestion() {
@@ -224,22 +225,20 @@ const questions = [
             const gameOverElement = document.createElement('h2');
             gameOverElement.innerText = 'Game over!';
             questionContainerElement.appendChild(gameOverElement);
-            scoreAreaElement.style.display = "none"; 
+            scoreAreaElement.style.display = "none";
             restartButton.classList.remove('hide');
           }
+ 
+
 
           function restartGame() {
-            startButton.classList.remove('hide');
+            currentQuestionIndex = 0;
+            score = 0;
+            answerSelected = false;
+            shuffledQuestions = questions.sort(() => Math.random() - .5);
+            resetState();
+            setNextQuestion();
             restartButton.classList.add('hide');
-            questionContainerElement.classList.add('hide');
-            scoreAreaElement.classList.add('hide');
-            clearStatusClass(document.body);
-            while (answerButtonsElement.firstChild) {
-              answerButtonsElement.removeChild(answerButtonsElement.firstChild);
-            }
-            document.getElementById("score").innerText = "0";
-            document.getElementById("incorrect").innerText = "0";
           }
-         
          
  

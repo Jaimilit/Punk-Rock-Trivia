@@ -19,7 +19,7 @@ body {
     color: whitesmoke;
     background-color: red;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     position: fixed;
     top: 0;
     left: 0;
@@ -31,13 +31,13 @@ position: absolute;
     width: 800px;
     max-width: 80%;
     height: 50%;
-    background-color: whitesmoke;
     border-radius: 10px;
     align-items: center;
     font-size: x-large;
     font: bold;
     padding: 5%;
     background-position: center;
+    color: white;
   }
 
 
@@ -84,19 +84,23 @@ color: white;
  }
  
  .score-area {
+    background-color: black;
     display: none;
     position: fixed;
-    bottom: 120px;
+    bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
-    width: 600px;
-    max-width: 80%;
-    background-color: whitesmoke;
-    padding: 20px;
+    width: 30vw;
+    max-width: 50%;
+    padding: 10px;
     align-items: center;
     text-align: center;
+    color: white;
   }
  
+  #question-container {
+    background-color: black;
+  }
 
 
   footer {
