@@ -1,6 +1,7 @@
 
 
 body {
+    background-image: url(../images/collage.jpeg);
     padding:0;
     margin: 0;
     display: flex;
@@ -15,21 +16,31 @@ body {
 }
 
 .heading {
+    color: whitesmoke;
+    background-color: red;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 50px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
 }
-
-.container {
+  
+  .container {
+position: absolute;
     width: 800px;
     max-width: 80%;
+    height: 50%;
     background-color: whitesmoke;
-    border-radius: 5px;
-    padding: 10px;
-}
+    border-radius: 10px;
+    align-items: center;
+    font-size: x-large;
+    font: bold;
+    padding: 5%;
+    background-position: center;
+  }
+
+  
 
 .btn-grid {
     display: grid;
@@ -40,6 +51,7 @@ body {
 .btn {
     border-radius: 5px;
     padding: 5px 10px;
+    font-size: large;
 }
 
 .btn:hover {
@@ -69,13 +81,28 @@ color: white;
 
 .hide {
     display: none;
- 
- 
  }
  
+ .score-area {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    width: 600px;
+    max-width: 80%;
+    background-color: whitesmoke;
+    padding: 20px;
+    align-items: center;
+    text-align: center; 
+  }
+
+#scores {
+    text-align: center;
+}
 
 footer {
     height: 150px;
+    color: white;
  }
  
  
@@ -93,6 +120,6 @@ footer {
   font-size: 160%;
   margin: 1%;
   padding: 7%;
-  color: #343a40;
+  color: white;
  }
  

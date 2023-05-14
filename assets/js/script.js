@@ -20,7 +20,7 @@ const questions = [
         ]
     },
     {
-        question: 'In 1995, this band\'s breakthrough album, Dookie, won the Grammy for Best Alternative Music Album.',
+        question: 'In 1995, this band\'s breakthrough album, "Dookie", won the Grammy for Best Alternative Music Album.',
         answers: [
             { text: 'Green Day', correct: true },
             { text: 'Rancid', correct: false },
@@ -30,7 +30,7 @@ const questions = [
     
     },
     {
-        question: 'Sometimes, it\'s the saddest incidents that make for the most amazing of songs. Name the band who turned a suicide tragedy into "Bro Hymn"',
+        question: 'Sometimes, it\'s the saddest incidents that make for the most amazing of songs. Name the band who turned a suicide tragedy into "Bro Hymn."',
         answers: [
             { text: 'Pennywise', correct: true },
             { text: 'Bad Religion', correct: false },
@@ -48,7 +48,7 @@ const questions = [
         ]
     },
     {
-      question: 'Who is Lars?',
+      question: 'Who is the main singer from Operation Ivy?',
       answers: [
         { text: 'Lars Frederiksen', correct: false },
         { text: 'Jesse Michaels', correct: true },
@@ -57,7 +57,7 @@ const questions = [
     ]
     },
     {
-    question: 'This band was formed by Andy Outbreak and Eric Ozenne and their last album is titled "The Butterfly Collection"',
+    question: 'This band was formed by Andy Outbreak and Eric Ozenne and their last album is titled "The Butterfly Collection."',
     answers: [
         { text: 'Rancid', correct: false },
         { text: 'Choking Victim', correct: false },
@@ -75,7 +75,7 @@ const questions = [
     ]
   },
   {
-    question: 'This band has a second album titled So This is Freedom',
+    question: 'This band has a second album titled "So This is Freedom"?',
     answers: [
         { text: 'The Casualties', correct: false },
         { text: 'The Unseen', correct: true },
@@ -84,7 +84,7 @@ const questions = [
     ]
   },
   {
-    question: 'The singer from this band has a book titled "Tranny: Confessions of Punk Rock Most Infamous Anarchist Sellout"',
+    question: 'The singer from this band has a book titled "Tranny: Confessions of Punk Rock Most Infamous Anarchist Sellout."',
     answers: [
         { text: 'Rancid', correct: false },
         { text: 'Bad Religion', correct: false },
