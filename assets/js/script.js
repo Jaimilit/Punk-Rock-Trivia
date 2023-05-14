@@ -193,12 +193,11 @@ const questions = [
     element.classList.remove('correct');
     element.classList.remove('wrong');
   }
- 
-  function incrementScore(){
+  function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
-   document.getElementById("score").innerText = ++oldScore;
- 
-   }
+    document.getElementById("score").innerText = ++oldScore;
+    score = oldScore;
+  }
  
    function incrementWrongAnswer() {
  
@@ -208,8 +207,7 @@ const questions = [
  
         // end game
         function endGame() {
-            let finalScore = score * 10;
-            const message = `You scored ${finalScore}%`;
+            const message = `You scored ${score} out of 10`;
             const scoreElement = document.createElement('p');
             scoreElement.innerText = message;
             questionContainerElement.appendChild(scoreElement);

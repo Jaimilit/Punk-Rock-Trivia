@@ -102,7 +102,7 @@ color: white;
     position: absolute;
     bottom: 0;
     z-index: 2;
-    background-color: whitesmoke;
+    background-color: black;
 }
 
 .social-networks {
@@ -119,5 +119,5 @@ color: white;
 .social-networks i {
     font-size: 160%;
     padding: 1%;
-    color: black;
+    color: white;
 }
