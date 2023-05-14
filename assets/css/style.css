@@ -131,16 +131,10 @@ color: white;
 
 @media screen and (min-width: 0px) and (max-width: 480px) {
 
-    #heading {
-        height: 20vh;
-        width:20vw:
-        display: relative;
-        font-size: small;
-    }
-
-    h1 {
-        font-size: small;
-    }
+  .heading {
+    font-size: medium;
+  }
+   
 
     .container {
         margin-top: 150px;
@@ -161,6 +155,7 @@ color: white;
 
   footer {
     margin: 0;
+    bottom: 0;
   }
 
 }
