@@ -146,24 +146,13 @@ color: white;
     position: flex;
     font-size: medium;
     }
-
-     
+ 
  .score-area {
     width: 80vw;
    height: 10vh;
    position: absolute;
-   bottom: 50px;
+   bottom: 40px;
    font-size: small;
   }
 
-    footer {
-        height: 1rem;
-    }
-
-    .social-networks>li {
-        display: inline;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        color: black;
-    }
 }
