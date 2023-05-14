@@ -187,7 +187,6 @@ const questions = [
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
       nextButton.classList.remove('hide');
     } else {
-      // end the game if there are no more questions
       endGame();
     }
   }
@@ -235,9 +234,7 @@ const questions = [
             score = 0;
             answerSelected = false;
             shuffledQuestions = questions.sort(() => Math.random() - .5);
-            resetState();
-            questionContainerElement.classList.remove('hide'); // show question container
-            scoreAreaElement.style.display = "block"; // show score area
+            startGame(); // call the startGame() function to restart the game
             restartButton.classList.add('hide');
             const scoreElement = document.querySelector('#question-container p');
             if (scoreElement) {
