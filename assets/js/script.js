@@ -226,9 +226,8 @@ const questions = [
             gameOverElement.innerText = 'Game over!';
             questionContainerElement.appendChild(gameOverElement);
             scoreAreaElement.style.display = "none";
-            restartButton.classList.remove('hide');
+            restartButton.classList.remove('hide'); // Show restart button
           }
- 
 
 
           function restartGame() {
@@ -237,8 +236,19 @@ const questions = [
             answerSelected = false;
             shuffledQuestions = questions.sort(() => Math.random() - .5);
             resetState();
-            setNextQuestion();
+            questionContainerElement.classList.remove('hide'); // show question container
+            scoreAreaElement.style.display = "block"; // show score area
             restartButton.classList.add('hide');
+            const scoreElement = document.querySelector('#question-container p');
+            if (scoreElement) {
+              scoreElement.remove();
+            }
+            const gameOverElement = document.querySelector('#question-container h2');
+            if (gameOverElement) {
+              gameOverElement.remove();
+            }
+            document.getElementById("score").innerText = '0';
+            document.getElementById("incorrect").innerText = '0';
           }
-         
+ 
  
