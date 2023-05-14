@@ -131,16 +131,26 @@ color: white;
 
 @media screen and (min-width: 0px) and (max-width: 480px) {
 
-    .container{
-    max-width: 50vw;
+    .heading {
+        height: 20vh;
+        width:20vw:
+    }
+
+    .heading > h1 {
+        width: 20vw;
+    }
+
+    .container {
+    width: 80vw;
     height: 40vh;
+    position: flex;
     }
 
      
  .score-area {
-    width: 30vw;
+    width: 50vw;
    height: 20vh;
-   position: fixed;
+   position: flex;
    bottom: 50px;
   }
 
