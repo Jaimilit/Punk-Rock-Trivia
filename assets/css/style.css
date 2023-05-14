@@ -19,8 +19,8 @@ body {
     color: whitesmoke;
     background-color: red;
     text-align: center;
-    font-size: 60px;
     position: fixed;
+    font-size: 60px;
     top: 0;
     left: 0;
     right: 0;
@@ -105,6 +105,7 @@ color: white;
 
   footer {
     width: 100%;
+    height: 50px;
     position: absolute;
     bottom: 0;
     z-index: 2;
@@ -117,14 +118,13 @@ color: white;
 
 .social-networks>li {
     display: inline;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     color: black;
 }
 
 .social-networks i {
-    font-size: 160%;
-    padding: 1%;
+    font-size: 140%;
     color: white;
 }
 
@@ -151,13 +151,13 @@ color: white;
  .score-area {
     width: 80vw;
    height: 10vh;
-   position: flex;
+   position: absolute;
    bottom: 50px;
    font-size: small;
   }
 
     footer {
-        height: 2rem;
+        height: 1rem;
     }
 
     .social-networks>li {
