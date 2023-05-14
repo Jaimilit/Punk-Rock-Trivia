@@ -98,29 +98,26 @@ color: white;
 
 
   footer {
-    display: fixed;
-    height: 150px;
-    background-color: white;
- }
- 
- 
- .social-networks {
-  text-align: center;
- }
- 
- 
- .social-networks > li {
-  display: inline;
- }
- 
- 
- .social-networks i {
-  font-size: 160%;
-  margin: 1%;
-  padding: 7%;
-  color: white;
- }
- 
- 
- 
- 
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    background-color: whitesmoke;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks>li {
+    display: inline;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: black;
+}
+
+.social-networks i {
+    font-size: 160%;
+    padding: 1%;
+    color: black;
+}
