@@ -134,10 +134,13 @@ color: white;
     #heading {
         height: 20vh;
         width:20vw:
-        font-size: 80px;
         display: relative;
+        font-size: small;
     }
 
+    h1 {
+        font-size: small;
+    }
 
     .container {
         margin-top: 150px;
@@ -148,16 +151,16 @@ color: white;
     }
  
     .score-area {
+        margin-top: 150px;
         width: 80vw;
         height: 10vh;
-        position: flex;
         bottom: 80px;
         margin: 20px;  
         font-size: small;
      }
 
   footer {
-    margin: 0 auto;
+    margin: 0;
   }
 
 }
