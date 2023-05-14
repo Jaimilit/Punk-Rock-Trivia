@@ -127,3 +127,33 @@ color: white;
     padding: 1%;
     color: white;
 }
+
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+
+    .container{
+        position: absolute;
+    width: 400px;
+    max-width: 80%;
+    height: 40%;
+    border-radius: 10px;
+    align-items: center;
+    font-size: x-large;
+    font: bold;
+    padding: 5%;
+    background-position: center;
+    color: white;
+
+    }
+
+    footer {
+        height: 2rem;
+    }
+
+    .social-networks>li {
+        display: inline;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        color: black;
+    }
+}
