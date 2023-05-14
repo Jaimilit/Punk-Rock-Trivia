@@ -97,6 +97,7 @@ const questions = [
   const nextButton = document.getElementById('next-btn');
   const questionContainerElement = document.getElementById('question-container');
   const questionElement = document.getElementById('question');
+  const scoreAreaElement = document.querySelector('.score-area');
   const answerButtonsElement = document.getElementById('answer-buttons');
    let shuffledQuestions;
   let currentQuestionIndex;
@@ -109,6 +110,7 @@ const questions = [
     currentQuestionIndex++;
     setNextQuestion();
   });
+
    // function to start game
   function startGame () {
       startButton.classList.add('hide');
@@ -116,7 +118,10 @@ const questions = [
       currentQuestionIndex = 0;
       score = 0;
       questionContainerElement.classList.remove('hide');
+      scoreAreaElement.classList.remove('hide');
       setNextQuestion();
+      document.querySelector('.score-area').style.display = "block";
+
   }
    // function to go to the next question and shuffle the order
  
@@ -214,8 +219,7 @@ const questions = [
             const gameOverElement = document.createElement('h2');
             gameOverElement.innerText = 'Game over!';
             questionContainerElement.appendChild(gameOverElement);
-            const scoreAreaElement = document.querySelector('.score-area');
-            scoreAreaElement.style.display = "none";
+            scoreAreaElement.style.display = "none"; 
           }
          
          

@@ -83,6 +83,7 @@ color: white;
  }
  
  .score-area {
+    display: none;
     position: fixed;
     bottom: 120px;
     left: 50%;
