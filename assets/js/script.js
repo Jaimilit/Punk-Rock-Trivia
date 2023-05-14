@@ -92,6 +92,8 @@ const questions = [
     ]
   },
     ]; 
+
+
      // define variables in order to drive quiz
   const startButton = document.getElementById('start-btn');
   const nextButton = document.getElementById('next-btn');
@@ -99,17 +101,20 @@ const questions = [
   const questionElement = document.getElementById('question');
   const scoreAreaElement = document.querySelector('.score-area');
   const answerButtonsElement = document.getElementById('answer-buttons');
+  const restartButton = document.getElementById('restart-btn');
    let shuffledQuestions;
   let currentQuestionIndex;
   let score = 0;
+  let answerSelected = false; 
  
  
  // event listeners
-  startButton.addEventListener('click', startGame);
-  nextButton.addEventListener('click', () => {
-    currentQuestionIndex++;
-    setNextQuestion();
-  });
+ startButton.addEventListener('click', startGame);
+ nextButton.addEventListener('click', () => {
+   currentQuestionIndex++;
+   setNextQuestion();
+ });
+
 
    // function to start game
   function startGame () {
@@ -153,37 +158,38 @@ const questions = [
   }
  
   // removes buttons when going to new question
-   function resetState() {
-   clearStatusClass(document.body);
-   nextButton.classList.add('hide');
-   while (answerButtonsElement.firstChild) {
-     answerButtonsElement.removeChild(answerButtonsElement.firstChild);
-   }
- }
+  function resetState() {
+    clearStatusClass(document.body);
+    nextButton.classList.add('hide');
+    while (answerButtonsElement.firstChild) {
+      answerButtonsElement.removeChild(answerButtonsElement.firstChild);
+    }
+  }
  
  
  // checks if selected answer is correct or incorrect and increments it accordingly
  function selectAnswer(e) {
-   const selectedButton = e.target;
-   const correct = selectedButton.dataset.correct;
-   setStatusClass(document.body, correct);
-   Array.from(answerButtonsElement.children).forEach(button => {
-     setStatusClass(button, button.dataset.correct);
-   });
- 
-  if (correct) {
-    incrementScore();
-  } else {
-    incrementWrongAnswer();
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct;
+    setStatusClass(document.body, correct);
+    Array.from(answerButtonsElement.children).forEach(button => {
+      setStatusClass(button, button.dataset.correct);
+      button.disabled = true; // disable all buttons in answerButtonsElement
+    });
+  
+    if (correct) {
+      incrementScore();
+    } else {
+      incrementWrongAnswer();
+    }
+    // show the next button if there are more questions
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+      nextButton.classList.remove('hide');
+    } else {
+      // end the game if there are no more questions
+      endGame();
+    }
   }
-  // show the next button if there are more questions
-  if (shuffledQuestions.length > currentQuestionIndex + 1) {
-    nextButton.classList.remove('hide');
-  } else {
-    // end the game if there are no more questions
-    endGame();
-  }
- }
  
  
   function setStatusClass(element, correct) {
@@ -205,7 +211,6 @@ const questions = [
   }
  
    function incrementWrongAnswer() {
- 
        let oldScore = parseInt(document.getElementById("incorrect").innerText);
    document.getElementById("incorrect").innerText = ++oldScore;
    }
@@ -220,6 +225,20 @@ const questions = [
             gameOverElement.innerText = 'Game over!';
             questionContainerElement.appendChild(gameOverElement);
             scoreAreaElement.style.display = "none"; 
+            restartButton.classList.remove('hide');
+          }
+
+          function restartGame() {
+            startButton.classList.remove('hide');
+            restartButton.classList.add('hide');
+            questionContainerElement.classList.add('hide');
+            scoreAreaElement.classList.add('hide');
+            clearStatusClass(document.body);
+            while (answerButtonsElement.firstChild) {
+              answerButtonsElement.removeChild(answerButtonsElement.firstChild);
+            }
+            document.getElementById("score").innerText = "0";
+            document.getElementById("incorrect").innerText = "0";
           }
          
          

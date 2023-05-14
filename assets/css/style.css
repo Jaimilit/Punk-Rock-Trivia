@@ -59,6 +59,7 @@ position: absolute;
 
 .btn.correct {
 background-color: green;
+color: white;
 }
 
 .btn.wrong {
