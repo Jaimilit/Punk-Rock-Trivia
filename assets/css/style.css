@@ -137,7 +137,7 @@ color: white;
    
 
     .container {
-        margin-top: -300px;
+        margin-top: -400px;
         padding: 0;
     width: 80vw;
     height: 40vh;
@@ -147,10 +147,10 @@ color: white;
     .score-area {
         width: 80vw;
         height: 10vh;
-        margin-top: 100px;
+        margin-top: 200px;
         font-size: medium;
         position: absolute;
-        bottom: 0;
+        margin-bottom: -100px;
 
      }
 
