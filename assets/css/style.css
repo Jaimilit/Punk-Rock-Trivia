@@ -67,7 +67,7 @@ background-color: red;
 color: white;
 }
 
-.start-btn, .next-btn {
+.start-btn, .next-btn, .restart-btn {
     font-size: 1rem;
     font-weight: bold;
     padding: 10px 20px;
@@ -147,13 +147,14 @@ color: white;
     .score-area {
         width: 80vw;
         height: 10vh;
+        margin-top: 100px;
         font-size: medium;
         position: absolute;
         bottom: 0;
 
      }
 
-     .start-btn, .next-btn {
+     .start-btn, .next-btn, .restart-btn {
         font-size: 1rem;
         font-weight: bold;
         margin-top: 40px;
