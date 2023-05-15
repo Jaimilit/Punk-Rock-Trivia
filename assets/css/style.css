@@ -27,7 +27,7 @@ body {
 }
   
   .container {
-position: absolute;
+position: flex;
     width: 800px;
     max-width: 80%;
     height: 50%;
@@ -35,7 +35,7 @@ position: absolute;
     align-items: center;
     font-size: x-large;
     font: bold;
-    padding: 5%;
+    padding: 6%;
     background-position: center;
     color: white;
   }
@@ -87,7 +87,7 @@ color: white;
     background-color: black;
     display: none;
     position: absolute;
-    bottom: 30px;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
     width: 30vw;
@@ -137,8 +137,7 @@ color: white;
    
 
     .container {
-        position: relative;
-        margin-top: -50px;
+        margin-top: 0;
         padding: 0;
     width: 80vw;
     height: 40vh;
@@ -150,8 +149,8 @@ color: white;
         height: 10vh;
         margin-top: 200px;
         font-size: medium;
-        position: absolute;
-        margin-bottom: -150px;
+        position: flex;
+        margin-bottom: 50px;
 
      }
 
