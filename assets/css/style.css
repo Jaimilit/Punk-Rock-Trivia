@@ -87,7 +87,7 @@ color: white;
     background-color: black;
     display: none;
     position: absolute;
-    bottom: 100px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     width: 30vw;
