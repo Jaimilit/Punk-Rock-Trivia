@@ -19,7 +19,7 @@ body {
     color: whitesmoke;
     background-color: red;
     text-align: center;
-    position: fixed;
+    position: absolute;
     font-size: 60px;
     top: 0;
     left: 0;
@@ -86,7 +86,7 @@ color: white;
  .score-area {
     background-color: black;
     display: none;
-    position: fixed;
+    position: absolute;
     bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
@@ -132,7 +132,7 @@ color: white;
 @media screen and (min-width: 0px) and (max-width: 480px) {
 
   .heading {
-    font-size: large;
+    font-size: 2rem;
   }
    
 
@@ -141,7 +141,7 @@ color: white;
         padding: 0;
     width: 80vw;
     height: 40vh;
-    font-size: medium;
+    font-size: large;
     }
  
     .score-area {
