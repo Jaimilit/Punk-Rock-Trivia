@@ -147,10 +147,9 @@ color: white;
     .score-area {
         width: 80vw;
         height: 10vh;
-        margin-top: 200px;
         font-size: medium;
         position: flex;
-        margin-bottom: -10px;
+        margin-bottom: -30px;
 
      }
 
