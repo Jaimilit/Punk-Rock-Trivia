@@ -137,7 +137,8 @@ color: white;
    
 
     .container {
-        margin-top: -100px;
+        position: relative;
+        margin-top: -200px;
         padding: 0;
     width: 80vw;
     height: 40vh;
