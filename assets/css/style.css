@@ -141,17 +141,17 @@ color: white;
         margin-top: -50px;
         padding: 0;
     width: 80vw;
-    height: 40vh;
-    font-size: large;
+    height: 30vh;
+    font-size: medium;
     }
  
     .score-area {
         width: 80vw;
-        height: 8vh;
+        height: 10vh;
         font-size: small;
-        padding: 5px;
         position: fixed;
-        margin-top: 100px;
+        margin-bottom: 12px;
+        padding-top: 2px;
      }
 
      .start-btn, .next-btn, .restart-btn {
@@ -159,6 +159,12 @@ color: white;
         font-weight: bold;
         margin-top: 20px;
         padding: 20px;
+    }
+
+    .btn {
+        border-radius: 5px;
+        padding: 5px 10px;
+        font-size: medium;
     }
 
   footer {
