@@ -138,7 +138,7 @@ color: white;
 
     .container {
         position: relative;
-        margin-top: -200px;
+        margin-top: -50px;
         padding: 0;
     width: 80vw;
     height: 40vh;
@@ -149,7 +149,7 @@ color: white;
         width: 80vw;
         height: 10vh;
         font-size: medium;
-        position: flex;
+        position: fixed;
         margin-bottom: -30px;
 
      }

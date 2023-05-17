@@ -38,10 +38,10 @@ const questions = [
         ]
     },
     {
-        question: 'Milo went to college, and then Everything Sucked. Who is the band, who created these records, and could also be noted for the cartoon drawn about their lead singer, depicting him as an almost Dilbert-like character?',
+        question: 'Tim Armstrong & Lars Frederiksen are singers for this famous punk band.',
         answers: [
             { text: 'Leftover Crack', correct: false },
-            { text: 'The Descendents', correct: true },
+            { text: 'Rancid', correct: true },
             { text: 'AFI', correct: false },
             { text: 'The Unseen', correct: false },
         ]
@@ -83,7 +83,7 @@ const questions = [
     ]
   },
   {
-    question: 'The singer from this band has a book titled "Tranny: Confessions of Punk Rock Most Infamous Anarchist Sellout."',
+    question: 'The singer from this band wrote a book titled "Tranny: Confessions of Punk Rock Most Infamous Anarchist Sellout."',
     answers: [
         { text: 'Rancid', correct: false },
         { text: 'Bad Religion', correct: false },
