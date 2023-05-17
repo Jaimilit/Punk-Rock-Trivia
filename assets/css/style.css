@@ -147,17 +147,17 @@ color: white;
  
     .score-area {
         width: 80vw;
-        height: 10vh;
-        font-size: medium;
+        height: 8vh;
+        font-size: small;
+        padding: 5px;
         position: fixed;
-        margin-bottom: -30px;
-
+        margin-top: 100px;
      }
 
      .start-btn, .next-btn, .restart-btn {
         font-size: 1rem;
         font-weight: bold;
-        margin-top: 40px;
+        margin-top: 20px;
         padding: 20px;
     }
 
