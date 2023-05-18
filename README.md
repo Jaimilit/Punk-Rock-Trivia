@@ -1,10 +1,10 @@
-Punk Rock Trivia
+PUNK ROCK TRIVIA
 
 This project was created to test the user's knowledge of punk rock music trivia.
 
 ![Responsiveness](/assets/images/screen-responsiveness.jpg)
 
-Goals
+# Goals
 * The main goal is to let the user test his/her knowledge of punk music
 * The user should have good insight of the content when viewing the start page
 * The user should be able to navigate the game easily
@@ -13,30 +13,30 @@ Goals
 * The user should have an easily accessible next button to continue the quiz until all responses are answered
 * The user should have the possiblity to restart the quiz at the end in order to improve his/her score
 
-User Stories
+## User Stories
 * I want the user to enjoy as well as be challanged during the quiz
 * I want the user to be able to view his/her score during the game
 * The game should be inutitive and easy to navigate
 
-DESIGN
+# DESIGN
 
 I chose a to create this page in keeping with a punk rock theme. The background I have chosen is a wallpaper/collage of punk rock bands. It is in keeping with the punk rock style - very busy. I have chosen 3 main colors here - white, black, and red - all very punk rock. The title is simple and the red background makes it pop. And the start button is big, so you can't miss starting the game. For font, I have used Monsterrat which is easy to read.  
 
-FEATURES
+## FEATURES
 
-Languages Used
+### Languages Used
 * HTML
 * CSS
 * Javascript
 
-Start Page
+### Start Page
 
 The title always appears on the top of the screen.
 The start button I made big so the user cannot miss it. 
 
 ![Start Page](/assets/images/start-page.jpg)
 
-Questions Page
+### Questions Page
 
 The user is presented with a 10 questions quiz game about punk rock music. 
 The user is presented with 10 questions and 4 choices for each question. 
@@ -51,16 +51,16 @@ The scoreboard also keeps tally of correct and incorrect responses so that the u
 
 ![Questions Page](/assets/images/questions.jpg)
 
-End Page
+### End Page
 At the end of the quiz the score board is removed and a final score is provided. It also announces to the user that the game is over. 
 The user is provided with a restart button if he/she would like to try again. I kept the button small as I wanted the focus to be on the final score for the user.
 ![End Page](/assets/images/game-over.jpg)
 
 
-Footer
+### Footer
 The footer was insprired by the love running project and the icons were taken from font awesome.
 
-Testing
+# Testing
 | Goal | Execution |
 | --------------- | --------------- |
 | The main goal is to let the user test his/her punk rock knowledge  | The quiz tests a person's knowledge and restarts if he/she wants to try and improve |
@@ -69,14 +69,14 @@ Testing
 | The user should receive direct feedback on whether the answer is correct or not | A clear red and green color is used for the user to easily see which option was correct  |
 | The user should have the possiblity to restart the quiz and try to improve  | When the quiz finishes the user receives a restart button if they want to test their knowledge again  |
 
-Responsiveness
+## Responsiveness
 
 The website is adapted to be seen on different screen sizes. The responsiveness of the website was first tested by chrome developer tools. Different breakpoints where used to view the website. Next to this the website was viewed on different devices: laptop, tablet, and smartphones.
 
 I have tested that my projects works on various browsers - Safari, Chrome, and FireFox. I also have confirmed that my project is responsive by using the devtools toolbar. I confirm that all sections, heading, body, & footer, are readable and easy to understand. 
 
 
-Validator Testing
+## Validator Testing
 HTML No errors were returned when passing through the official W3C validator
 ![HTML Validator](/assets/images/html-checker.jpg)
 CSS No errors were returned when passing through the official Jigsaw validator
@@ -87,10 +87,10 @@ lighthouse CSS html
 Javascript - Minor error were returned using (JSHint) with terms "let" and "const" when using Mozilla.
 ![Jshint](/assets/images/jshint.jpg)
 
-Unfixed Bugs
+# Unfixed Bugs
 In the future I would like to increase my accessibility score, as well as my performance score. I think the more I work at coding and become familiar with best practices, that these scores will become better and better. In the future I would like to add a timer to countdown for each question.
 
-Deployment
+# Deployment
 For this project I used GitHub
 
 * Log into GitHub
@@ -102,9 +102,9 @@ For this project I used GitHub
 
 The live link can be found here - https://jaimilit.github.io/Punk-Rock-Trivia/
 
-Credits
+# Credits
 
-Content & Images
+## Content & Images
 The icons in the footer were taken from Font Awesome
 Footer was taken from Love Running Project
 Trivia questions were written by me and inspired by these two websites: https://www.funtrivia.com/trivia-quiz/Music/So-You-Think-Youre-Punk-170784.html and https://thereviewsarein.com/2020/05/03/pretty-hard-punk-rock-quiz/
