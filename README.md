@@ -2,7 +2,7 @@ Punk Rock Trivia
 
 This project was created to test the user's knowledge of punk rock music trivia.
 
-![Responsiveness](../Project-Two/assets/images/screen-responsiveness.jpg)
+![Responsiveness](//assets/images/screen-responsiveness.jpg)
 
 Goals
 * The main goal is to let the user test his/her knowledge of punk music.
@@ -33,7 +33,7 @@ Start Page
 The title always appears on the screen.
 The start button I made big so the user cannot miss it. 
 
-![Start Page](../Project-Two/assets/images/start-page.jpg)
+![Start Page](//assets/images/start-page.jpg)
 
 Questions Page
 
@@ -48,12 +48,12 @@ The user also has to choose a response before the next button appears. This is s
 
 The scoreboard also keeps tally of correct and incorrect responses so that the user knows how he/she is doing at all times during the game. This way, at the end there will be no surprises in the final tally.
 
-![Questions Page](../Project-Two/assets/images/questions.jpg)
+![Questions Page](//assets/images/questions.jpg)
 
 End Page
 At the end of the quiz the score board is removed and a final score is provided. It also announces to the user that the game is over. 
 The user is provided with a restart button if he/she would like to try again. I kept the button small as I wanted the focus to be on the final score for the user.
-![End Page](../Project-Two/assets/images/game-over.jpg)
+![End Page](//assets/images/game-over.jpg)
 
 
 Footer
@@ -77,12 +77,12 @@ I have tested that my projects works on various browsers - Safari, Chrome, and F
 
 Validator Testing
 HTML No errors were returned when passing through the official W3C validator
-![HTML Validator](../Project-Two/assets/images/html-checker.jpg)
+![HTML Validator](//assets/images/html-checker.jpg)
 CSS No errors were returned when passing through the official Jigsaw validator
-![CSS Validator](../Project-Two/assets/images/css-validator.jpg)
+![CSS Validator](//assets/images/css-validator.jpg)
 Accessibility I confirm easy user accessibility by running it through lighthouse in dev tools
 lighthouse CSS html
-![Lighthouse](../Project-Two/assets/images/lighthouse.jpg)
+![Lighthouse](//assets/images/lighthouse.jpg)
 
 Unfixed Bugs
 In the future I would like to increase my accessibility score, as well as my performance score. I think the more I work at coding and become familiar with best practices, that these scores will become better and better. In the future I would like to add a timer to countdown for each question.
