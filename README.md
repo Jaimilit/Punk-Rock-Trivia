@@ -1,35 +1,80 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+Punk Rock Trivia
 
-Welcome,
+This prioject was created to test the user's knowledge of punk rock music trivia.
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Goals
+* The main goal is to let the user test his/her knowledge of punk music.
+* The user should have good insight in the content when viewing the startpage.
+* The user should have an easy accesible button to start the quiz.
+* The user should receive direct feedback on whether their response to each questions is correct or not.
+* The user should have the possiblity to restart the quiz at the end in order to improve. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **March 3rd, 2023**
+DESIGN
 
-## Codeanywhere Reminders
+I chose a to create this page in keeping with the punk rock theme. The background I have chosen is a wallpaper/collage of punk rock bands. It is in keeping with the punk rock style. I have chosen 3 main colors here - white, black, and red - all very punk rock. The title is simple and the red background makes it pop. And the start button is big, so you can't miss starting the game.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+FEATURES
 
-`python3 -m http.server`
+Languages Used
+HTML
+CSS
+Javascript
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+Start Page
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The title always appears on the screen.
+The start button I made big so the user cannot miss it. 
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+Questions
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The user is presented with a 10 questions quiz game about punk rock music. 
+The user is presented with 10 questions and 4 choices for each question. 
+I also have used a hover effect when the user hovers over the 4 choices so he/she cannot make a mistake when clicking on the choices.
 
-To log into the Heroku toolbelt CLI:
+The user immedately knows how he/she is doing on the quiz. Once chosen an answer, the incorrect answers are changed to red and the correct answer is changed to green. The color of the text also goes from black before answering to white after answering for easy readability. 
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+All the buttons are the same size for the choices. The start button and next are big for easy access for the user.
+The user also has to choose a response before the next button appears. This is so he/she does not skip a question and is forced to provide an answer first. 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
----
+The scoreboard also keeps tally of correct and incorrect responses so that the user knows how he/she is doing at all times during the game. This way, at the end there will be no surprises in the final tally.
 
-Happy coding!
+End Page
+At the end of the quiz the score board is removed and a final score is provided. It also announces to the user that the game is over. 
+The user is provided with a restart button if he/she would like to try again. I kept the button small as I wanted the focus to be on the final score for the user.
+
+
+Footer
+The footer was insprired by the love running project and the icons were taken from font awesome.
+
+Testing
+I have tested that my projects works on various browsers - Safari, Chrome, and FireFox. I also have confirmed that my project is responsive by using the devtools toolbar. I confirm that all sections, heading, body, & footer, are readable and easy to understand. 
+
+Validator Testing
+HTML No errors were returned when passing through the official W3C validator
+CSS No errors were returned when passing through the official Jigsaw validator
+Accessibility I confirm easy user accessibility by running it through lighthouse in dev tools
+lighthouse CSS html
+
+Unfixed Bugs
+In the future I would like to increase my accessibility score, as well as my performance score. I think the more I work at coding and become familiar with best practices, that these scores will become better and better.
+
+Deployment
+For this project I used GitHub
+
+In the GitHub repository, navigate to the Settings tab
+From the source section drop-down menu, select the Master Branch
+Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+The live link can be found here - https://github.com/Jaimilit/Project-Two/settings/pages
+
+Credits
+
+Content
+The icons in the footer were taken from Font Awesome
+Footer was taken from Love Running Project
+Trivia questions were written by me and inspired by these two websites: https://www.funtrivia.com/trivia-quiz/Music/So-You-Think-Youre-Punk-170784.html and https://thereviewsarein.com/2020/05/03/pretty-hard-punk-rock-quiz/
+Wallpaper background taken from here: https://wallpaperaccess.com/punk-rock
+
+
+
+
