@@ -38,7 +38,7 @@ const questions = [
         ]
     },
     {
-        question: 'Tim Armstrong & Lars Frederiksen are singers for this famous punk band.',
+        question: 'Tim Armstrong & Lars Frederiksen are singers of this famous punk band.',
         answers: [
             { text: 'Leftover Crack', correct: false },
             { text: 'Rancid', correct: true },
@@ -47,7 +47,7 @@ const questions = [
         ]
     },
     {
-      question: 'Who is the main singer from Operation Ivy?',
+      question: 'Who was the lead singer of Operation Ivy?',
       answers: [
         { text: 'Lars Frederiksen', correct: false },
         { text: 'Jesse Michaels', correct: true },
@@ -83,7 +83,7 @@ const questions = [
     ]
   },
   {
-    question: 'The singer from this band wrote a book titled "Tranny: Confessions of Punk Rock Most Infamous Anarchist Sellout."',
+    question: 'The singer from this band wrote a memoir titled "Tranny: Confessions of Punk Rock Most Infamous Anarchist Sellout."',
     answers: [
         { text: 'Rancid', correct: false },
         { text: 'Bad Religion', correct: false },

@@ -43,14 +43,15 @@ position: flex;
 
 .btn-grid {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    margin: 20px 0;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px 0;
 }
 
 .btn {
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 5px;
     font-size: large;
+    flex: 1;
 }
 
 .btn:hover {
@@ -165,6 +166,7 @@ color: white;
         border-radius: 5px;
         padding: 5px 10px;
         font-size: medium;
+        width: 100%;
     }
 
   footer {
