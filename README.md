@@ -2,7 +2,7 @@ Punk Rock Trivia
 
 This project was created to test the user's knowledge of punk rock music trivia.
 
-![Responsiveness](//assets/images/screen-responsiveness.jpg)
+![Responsiveness](/assets/images/screen-responsiveness.jpg)
 
 Goals
 * The main goal is to let the user test his/her knowledge of punk music.
@@ -102,7 +102,7 @@ For this project I used GitHub
 * At the ”Source” section choose ”main” as Branch and root as folder and click ”Save”
 * The website will deploy and the pages refreshes to provide the live link to the project.
 
-The live link can be found here - https://github.com/Jaimilit/Project-Two/settings/pages
+The live link can be found here - https://jaimilit.github.io/Punk-Rock-Trivia/
 
 Credits
 
