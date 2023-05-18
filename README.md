@@ -19,7 +19,7 @@ User Stories
 
 DESIGN
 
-I chose a to create this page in keeping with the punk rock theme. The background I have chosen is a wallpaper/collage of punk rock bands. It is in keeping with the punk rock style. I have chosen 3 main colors here - white, black, and red - all very punk rock. The title is simple and the red background makes it pop. And the start button is big, so you can't miss starting the game. For font, I have used Monsterrat which is easy to read 
+I chose a to create this page in keeping with a punk rock theme. The background I have chosen is a wallpaper/collage of punk rock bands. It is in keeping with the punk rock style. I have chosen 3 main colors here - white, black, and red - all very punk rock. The title is simple and the red background makes it pop. And the start button is big, so you can't miss starting the game. For font, I have used Monsterrat which is easy to read 
 
 FEATURES
 
@@ -27,6 +27,9 @@ Languages Used
 * HTML
 * CSS
 * Javascript
+
+Typography
+I have chosen Monsterrat font because it is easy to read
 
 Start Page
 
@@ -83,6 +86,8 @@ CSS No errors were returned when passing through the official Jigsaw validator
 Accessibility I confirm easy user accessibility by running it through lighthouse in dev tools
 lighthouse CSS html
 ![Lighthouse](//assets/images/lighthouse.jpg)
+Javascript - Minor error were returned using (JSHint) with terms "let" and "const" when using Mozilla.
+![Jshint](//assets/images/jshint.jpg)
 
 Unfixed Bugs
 In the future I would like to increase my accessibility score, as well as my performance score. I think the more I work at coding and become familiar with best practices, that these scores will become better and better. In the future I would like to add a timer to countdown for each question.
