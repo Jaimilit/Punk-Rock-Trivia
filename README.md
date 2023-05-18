@@ -40,7 +40,7 @@ The start button I made big so the user cannot miss it.
 
 The user is presented with a 10 questions quiz game about punk rock music. 
 The user is presented with 10 questions and 4 choices for each question. 
-I also have used a hover effect when the user hovers over the 4 choices so he/she cannot make a mistake when clicking on the choices.
+I have used a hover effect when the user hovers over the 4 choices so he/she cannot make a mistake when clicking on the choices.
 
 The user immedately knows how he/she is doing on the quiz. Once an answer has been chosen, the incorrect answers are changed to red and the correct answer is changed to green. The color of the text also goes from black before answering to white after answering for easy readability. 
 
