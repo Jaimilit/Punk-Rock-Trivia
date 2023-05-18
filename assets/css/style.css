@@ -147,13 +147,12 @@ color: white;
     }
  
     .score-area {
-        margin: 0 auto;
         width: 50vw;
-        height: 3vh;
+        height: 7vh;
         font-size: small;
         position: fixed;
-        margin-bottom: 9px;
-        padding: 0;
+        margin-bottom: 10px;
+        padding: 5px 5px 10px 5 px;
      }
 
      .start-btn, .next-btn, .restart-btn {
