@@ -84,8 +84,8 @@ HTML No errors were returned when passing through the official W3C validator
 CSS No errors were returned when passing through the official Jigsaw validator
 ![CSS Validator](/assets/images/css-validator.jpg)
 Accessibility I confirm easy user accessibility by running it through lighthouse in dev tools
-lighthouse CSS html
-![Lighthouse](/assets/images/lighthouse.jpg)
+lighthouse 
+![Lighthouse](/assets/image/lighthouse.jpg)
 Javascript - Minor error were returned using (JSHint) with terms "let" and "const" when using Mozilla.
 ![Jshint](/assets/images/jshint.jpg)
 
