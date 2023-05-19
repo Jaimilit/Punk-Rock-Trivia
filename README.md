@@ -31,7 +31,7 @@ I chose a to create this page in keeping with a punk rock theme. The background 
 
 ### Start Page
 
-The title always appears on the top of the screen.
+The title of the trivia game always appears on the top of the screen.
 The start button I made big so the user cannot miss it. 
 
 ![Start Page](/assets/images/start-page.jpg)
@@ -40,19 +40,20 @@ The start button I made big so the user cannot miss it.
 
 The user is presented with a 10 questions quiz game about punk rock music. 
 The user is presented with 10 questions and 4 choices for each question. 
-I have used a hover effect when the user hovers over the 4 choices so he/she cannot make a mistake when clicking on the choices.
+I have used a hover effect when the user hovers over the 4 choices so he/she cannot make a mistake when clicking on the choices. 
+I have also faded the background image when the game starts so the user can better focus and see the questions being asked. 
 
-The user immedately knows how he/she is doing on the quiz. Once an answer has been chosen, the incorrect answers are changed to red and the correct answer is changed to green. The color of the text also goes from black before answering to white after answering for easy readability. 
+The user immedately knows how he/she is doing on the quiz. Once an answer has been chosen, the incorrect choices are changed to red and the correct answer is changed to green. The color of the text also goes from black before answering to white after answering for easy readability. 
 
 All the buttons are the same size for the choices. The start button and next are big for easy access for the user.
-The user also has to choose a response before the next button appears. This is so he/she does not skip a question and is forced to provide an answer first. 
+The user also has to choose a response before the next button appears. This is so the user does not skip a question and is forced to provide an answer first before moving on. 
 
 The scoreboard also keeps tally of correct and incorrect responses so that the user knows how he/she is doing at all times during the game. This way, at the end there will be no surprises in the final tally.
 
 ![Questions Page](/assets/images/questions.jpg)
 
 ### End Page
-At the end of the quiz the score board is removed and a final score is provided. It also announces to the user that the game is over. 
+At the end of the quiz the score board is removed and a final score is provided. It also announces to the user that the game is over. Additionally, the background image becomes unfaded since the game is over.
 The user is provided with a restart button if he/she would like to try again. I kept the button small as I wanted the focus to be on the final score for the user.
 ![End Page](/assets/images/game-over.jpg)
 
@@ -67,6 +68,7 @@ The footer was insprired by the love running project and the icons were taken fr
 | The user should have good insight of the content when viewing the startpage | The title and background gives the user clear insight on what the quiz is about  |
 | The user should have an easy accesible button to start the quiz  | The start button is easily visible  |
 | The user should receive direct feedback on whether the answer is correct or not | A clear red and green color is used for the user to easily see which option was correct  |
+| The user should know his/her score throughout the ga,e | A score area keeps a tally of correct and incorrect responses and is always visible to the user  |
 | The user should have the possiblity to restart the quiz and try to improve  | When the quiz finishes the user receives a restart button if they want to test their knowledge again  |
 
 ## Responsiveness
