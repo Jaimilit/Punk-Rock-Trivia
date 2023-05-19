@@ -129,6 +129,8 @@ function startGame() {
   scoreAreaElement.classList.remove("hide");
   setNextQuestion();
   document.querySelector(".score-area").style.display = "block";
+  document.body.classList.add("playing");
+
 }
 
 // function to go to the next question and shuffle the order
@@ -223,7 +225,8 @@ function endGame() {
   gameOverElement.innerText = "Game over!";
   questionContainerElement.appendChild(gameOverElement);
   scoreAreaElement.style.display = "none";
-  restartButton.classList.remove("hide"); // Show restart button
+  restartButton.classList.remove("hide"); 
+  document.body.classList.remove("playing");
 }
 
 function restartGame() {

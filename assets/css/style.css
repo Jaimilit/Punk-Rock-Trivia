@@ -14,6 +14,10 @@ body {
   text-align: center;
 }
 
+body.playing {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/collage.jpeg);
+}
+
 .heading {
   color: whitesmoke;
   background-color: red;
