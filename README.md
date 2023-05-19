@@ -8,7 +8,7 @@ This project was created to test the user's knowledge of punk rock music trivia.
 * The main goal is to let the user test his/her knowledge of punk music
 * The user should have good insight of the content when viewing the start page
 * The user should be able to navigate the game easily
-* The user should have an easily accesible button to start the quiz
+* The user should have an easily accessible button to start the quiz
 * The user should receive direct feedback on whether his/her response to each questions is correct or not
 * The user should have an easily accessible next button to continue the quiz until all responses are answered
 * The user should have the possiblity to restart the quiz at the end in order to improve his/her score
@@ -46,7 +46,7 @@ I have also faded the background image when the game starts so the user can bett
 The user immedately knows how he/she is doing on the quiz. Once an answer has been chosen, the incorrect choices are changed to red and the correct answer is changed to green. The color of the text also goes from black before answering to white after answering for easy readability. 
 
 All the buttons are the same size for the choices. The start button and next are big for easy access for the user.
-The user also has to choose a response before the next button appears. This is so the user does not skip a question and is forced to provide an answer first before moving on. 
+The user also has to choose a response before the next button appears. This is so the user does not skip a question and is forced to provide an answer first before moving forward in the game. 
 
 The scoreboard also keeps tally of correct and incorrect responses so that the user knows how he/she is doing at all times during the game. This way, at the end there will be no surprises in the final tally.
 
@@ -65,10 +65,10 @@ The footer was insprired by the love running project and the icons were taken fr
 | Goal | Execution |
 | --------------- | --------------- |
 | The main goal is to let the user test his/her punk rock knowledge  | The quiz tests a person's knowledge and restarts if he/she wants to try and improve |
-| The user should have good insight of the content when viewing the startpage | The title and background gives the user clear insight on what the quiz is about  |
-| The user should have an easy accesible button to start the quiz  | The start button is easily visible  |
+| The user should have good insight of the content when viewing the start page | The title and background gives the user clear insight on what the quiz is about  |
+| The user should have an easy accessible button to start the quiz  | The start button is easily visible  |
 | The user should receive direct feedback on whether the answer is correct or not | A clear red and green color is used for the user to easily see which option was correct  |
-| The user should know his/her score throughout the ga,e | A score area keeps a tally of correct and incorrect responses and is always visible to the user  |
+| The user should know his/her score throughout the game | A score area keeps a tally of correct and incorrect responses and is always visible to the user  |
 | The user should have the possiblity to restart the quiz and try to improve  | When the quiz finishes the user receives a restart button if they want to test their knowledge again  |
 
 ## Responsiveness
@@ -81,16 +81,18 @@ I have tested that my projects works on various browsers - Safari, Chrome, and F
 ## Validator Testing
 HTML No errors were returned when passing through the official W3C validator
 ![HTML Validator](/assets/images/html-checker.jpg)
+
 CSS No errors were returned when passing through the official Jigsaw validator
 ![CSS Validator](/assets/images/css-validator.jpg)
+
 Accessibility I confirm easy user accessibility by running it through lighthouse in dev tools
-lighthouse 
 ![Lighthouse](/assets/images/lighthouse.jpg)
-Javascript - Minor error were returned using (JSHint) with terms "let" and "const" when using Mozilla.
+
+Javascript - Minor errors were returned using (JSHint) with terms "let" and "const" when using Mozilla.
 ![Jshint](/assets/images/jshint.jpg)
 
 # Unfixed Bugs
-In the future I would like to increase my accessibility score, as well as my performance score. I think the more I work at coding and become familiar with best practices, that these scores will become better and better. In the future I would like to add a timer to countdown for each question.
+In the future I would like to increase my performance and SEO scores. I think the more I work at coding and become familiar with best practices, that these scores will become better and better. In the future I would like to add a timer to countdown for each question.
 
 # Deployment
 For this project I used GitHub
@@ -107,8 +109,8 @@ The live link can be found here - https://jaimilit.github.io/Punk-Rock-Trivia/
 # Credits
 
 ## Content & Images
-The icons in the footer were taken from Font Awesome
-Footer was taken from Love Running Project
-Trivia questions were written by me and inspired by these two websites: https://www.funtrivia.com/trivia-quiz/Music/So-You-Think-Youre-Punk-170784.html and https://thereviewsarein.com/2020/05/03/pretty-hard-punk-rock-quiz/
-Wallpaper background taken from here: https://wallpaperaccess.com/punk-rock
-Much of the code was inspried by this video: https://www.youtube.com/watch?v=riDzcEQbX6k
+* The icons in the footer were taken from Font Awesome
+* Footer was taken from Love Running Project
+* Trivia questions were written by me and inspired by these two websites: https://www.funtrivia.com/trivia-quiz/Music/So-You-Think-Youre-Punk-170784.html and https://thereviewsarein.com/2020/05/03/pretty-hard-punk-rock-quiz/
+* Wallpaper background taken from here: https://wallpaperaccess.com/punk-rock
+* Much of the code was inspried by this video: https://www.youtube.com/watch?v=riDzcEQbX6k
