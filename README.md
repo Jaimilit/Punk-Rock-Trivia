@@ -91,6 +91,10 @@ Accessibility I confirm easy user accessibility by running it through lighthouse
 Javascript - Minor errors were returned using (JSHint) with terms "let" and "const" when using Mozilla.
 ![Jshint](/assets/images/jshint.jpg)
 
+I have also checked it on wave with no errors found
+![Wave](/assets/images/wave.jpg)
+
+
 # Unfixed Bugs
 In the future I would like to increase my performance and SEO scores. I think the more I work at coding and become familiar with best practices, that these scores will become better and better. In the future I would like to add a timer to countdown for each question.
 
