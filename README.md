@@ -88,7 +88,7 @@ CSS No errors were returned when passing through the official Jigsaw validator
 Accessibility I confirm easy user accessibility by running it through lighthouse in dev tools
 ![Lighthouse](/assets/images/lighthouse.jpg)
 
-Javascript - Minor errors were returned using (JSHint) with terms "let" and "const" when using Mozilla.
+Javascript - No errors were found in Jshint
 ![Jshint](/assets/images/jshint.jpg)
 
 I have also checked it on wave with no errors found
@@ -96,7 +96,7 @@ I have also checked it on wave with no errors found
 
 
 # Unfixed Bugs
-In the future I would like to increase my performance and SEO scores. I think the more I work at coding and become familiar with best practices, that these scores will become better and better. In the future I would like to add a timer to countdown for each question.
+At the moment there are no notable bugs in the system. In the future I would like to add a timer to countdown for each question.
 
 # Deployment
 For this project I used GitHub

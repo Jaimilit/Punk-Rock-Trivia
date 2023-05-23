@@ -1,5 +1,5 @@
 body {
-  background-image: url(../images/collage.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/collage.jpeg);
   background-size: contain;
   padding: 0;
   margin: 0;
@@ -12,10 +12,6 @@ body {
   font-family: "monsterrat", sans-serif;
   color: black;
   text-align: center;
-}
-
-body.playing {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/collage.jpeg);
 }
 
 .heading {
